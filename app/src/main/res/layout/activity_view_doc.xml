@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wangx.teachingassistantTeacher.ui.ViewDocActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_resource_teacher"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="2dp"
+            android:background="#424242"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_resource_time"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#424242"/>
+    <!--资源标题-->
+    <TextView
+        android:id="@+id/tv_img_title"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#424242"/>
+    <!--图片资源-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="该资源不支持在线预览，请下载查看"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/bt_download"
+        android:layout_margin="10dp"
+        android:background="#424242"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:text="下载资源"
+        android:layout_height="wrap_content" />
+</LinearLayout>

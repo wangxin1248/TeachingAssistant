@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearlayout_work"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.wangx.teachingassistantTeacher.ui.WorkActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#424242">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="最新笔记"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linearlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--下拉刷新控件-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/linearlayout_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--本文主角-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/linearlayout_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/activity_list_work"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/work_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_black_48dp" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>单选</item>
+        <item>多选，最多2项</item>
+        <item>多选，无限制</item>
+    </string-array>
+
+</resources>
+

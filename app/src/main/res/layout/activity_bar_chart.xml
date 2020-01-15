@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangx.teachingassistantTeacher.ui.BarChartActivity">
+    <LinearLayout
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:id="@+id/chart1"
+            android:layout_height="461dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/bt_pieChat"
+            android:layout_weight="1"
+            android:text="饼状图"
+            android:textColor="#ffffff"
+            android:background="#424242"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/bt_barChat"
+            android:background="#424242"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="柱状图（垂直）"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:background="#424242"
+            android:id="@+id/bt_barChat_hori"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="柱状图（水平）"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

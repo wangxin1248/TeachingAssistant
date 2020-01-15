@@ -1,0 +1,45 @@
+<resources>
+    <string name="name">教学助手</string>
+    <string name="title_home">我</string>
+    <string name="title_resource">教学助手</string>
+    <string name="title_notice">公告</string>
+    <string name="title_activity">活动</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">请输入用户名</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_password">密码不能为空</string>
+    <string name="teacher">教师</string>
+    <string name="student">学生</string>
+    <string name="register">新用户请您注册</string>
+    <string name="error_field_required">用户名不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="activity_work">笔记</string>
+
+
+    <string name="view_notice">查看详情</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="input_hint">发送消息</string>
+    <string name="message_click_hint">点击消息事件</string>
+    <string name="message_long_click_hint">长按消息事件</string>
+    <string name="avatar_click_hint">头像点击事件</string>
+
+    <string-array name="messages_array">
+        <item>走着走着，就散了，回忆都淡了</item>
+        <item>看着看着，就累了，星光也暗了</item>
+        <item>听着听着，就醒了，开始埋怨了</item>
+        <item>回头发现，你不见了，突然我乱了</item>
+        <item>这么巧你也是啊！</item>
+        <item>你在装逼？</item>
+        <item>呃呃呃呃呃呃</item>
+        <item>我的世界太过安静，静得可以听见自己心跳的声音</item>
+        <item>聪明的人，喜欢猜心，也许猜对了别人的心，却也失去了自己的。</item>
+        <item>傻气的人，喜欢给心，也许会被人骗，却未必能得到别人的。</item>
+    </string-array>
+</resources>
